@@ -36,3 +36,15 @@ body{
 .equal{
     grid-column: span 2;
 }
+
+
+.display{
+    padding: 30px;
+    grid-column: 1/-1;
+    background-color: rgba(0, 0, 0, .75);
+    font-size: 40px;
+    color: white;
+    word-wrap: break-word;
+    word-break: break-all;
+    text-align: right;
+}
