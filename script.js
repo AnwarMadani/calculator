@@ -16,3 +16,29 @@ numbers.forEach(button => {
     }
     )
 })
+
+
+operations.forEach(button => {
+    button.addEventListener('click', () => {
+        currBtn.textContent += button.textContent;
+        expression += button.textContent;
+    }
+    )
+})
+
+equalBtn.addEventListener('click', () =>{
+    console.log(eval(expression));
+    expression = eval(expression);
+    currBtn.textContent = expression;
+})
+
+
+clearBtn.addEventListener('click', () =>{
+    currBtn.textContent = "";
+    expression = "";
+})
+
+delBtn.addEventListener('click', () =>{
+    expression = expression.toString().slice(0, -1);
+    currBtn.textContent = expression;
+})
